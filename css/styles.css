@@ -124,3 +124,94 @@
 .hamburger{
     border:solid 0.2em white;
 }
+
+/* ------------portfolio--------------- */
+/* Fading animation */
+
+
+@-webkit-keyframes fade-portfolio {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fade-portfolio {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+#company1{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company2{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company3{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company4{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company5{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company6{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company7{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#company8{
+    background-image: url("../images/email_marketing_banner_inset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+.portfolio-wrapper table td{
+    border: white solid 1em;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.portfolio-item{
+    background-color: rgba(0, 0, 0, 0.603);
+    opacity: 0;
+    padding: 2em;
+    
+}
+
+#company1 .portfolio-item{
+    height: 45em;
+}
+#company4 .portfolio-item{
+    height: 70em;
+}
+#company5 .portfolio-item{
+    height: 40em;
+}
+#company7 .portfolio-item, #company8 .portfolio-item{
+    height: 23em;
+}
+

@@ -112,6 +112,7 @@
                 </div>
                 
             </div>
+           
             <!-- content marketing -->
             <div class="item">
                 <div class="row">
@@ -152,9 +153,102 @@
         
         </div>
     </div>
+    <!-- portfolio -->
+    <div class="container" id="portfolio">
+        <div class="portfolio-wrapper">
+            <h1 class="text-center">Our Portfolio</h1>
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <td  colspan="2" rowspan="2" id="company1">
+                            <div class="portfolio-item">
+                                <h1>Gravit 8 Marketing</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                        <td colspan="2" id="company2">
+                            <div class="portfolio-item">
+                                <h1>Blue Fountain Media</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="company3">
+                            <div class="portfolio-item">
+                                <h1>Enate Marketing</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                        <td rowspan="3" id="company4">
+                            <div class="portfolio-item">
+                                <h1>Kvantum</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" id="company5">
+                            <div class="portfolio-item">
+                                <h1>Wixon Jewellers</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                        <td colspan="2" id="company6">
+                            <div class="portfolio-item">
+                                <h1>i7 Marketing</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate
+                                    corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="company7">
+                            <div class="portfolio-item">
+                                <h1>Ripple Marketing</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                        <td id="company8">
+                            <div class="portfolio-item">
+                                <h1>Smemark</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+           
+        </div>
+        
+    </div>
     
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        //on hover portfoio item, show info
+        $("document").ready(function(){
+            $(".portfolio-item").mouseenter(function(){
+                $(this).fadeTo(1000, 1);
+            });
+
+            $(".portfolio-item").click(function () {
+                $(this).fadeTo(1000, 1);
+            });
+            $(".portfolio-item").focusin(function () {
+               $(this).fadeTo(1000, 1);
+            });
+            $(".portfolio-item").focusout(function () {
+                $(this).fadeTo(2000, 0);
+            });
+            $(".portfolio-item").mouseleave(function () {
+                $(this).fadeTo(2000, 0);
+            });
+           
+            
+
+        });
+    </script>
 </body>
 </html>

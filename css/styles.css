@@ -108,12 +108,12 @@
 
 .item .row{
     padding: 5em;
-    color: rgb(196, 193, 193);
+    color: rgb(222, 250, 252);
     font-weight: 600;
 }
 
 .back-tint{
-    background-color: #02020281;
+    background-color: #020202b9;
     padding-bottom: 1em;
 }
 
@@ -322,7 +322,7 @@
 }
 #footer{
     padding: 3em;
-    background-color: teal;
+    background-color:  rgb(0, 100, 131);;
     color:rgb(217, 254, 255);
 }
 
@@ -345,9 +345,13 @@
 
 #copyright{
     width:100%;
-    background-color:rgb(0, 94, 94);
+    background-color: rgba(0, 64, 83, 0.596);
     padding: 1em;
     margin-top:2em;
+}
+
+#footer h5 a{
+    color:rgb(217, 254, 255);
 }
 
 

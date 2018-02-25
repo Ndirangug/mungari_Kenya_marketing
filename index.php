@@ -26,21 +26,21 @@
                         <span class="icon-bar hamburger"></span>
                         <span class="icon-bar hamburger"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Muthangari Kenya Marketing</a>
+                    <a class="navbar-brand" href="#">Mungari Kenya Marketing</a>
                 </div>
                 <div class="collapse navbar-collapse" id="homeNavbar">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="about.php">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="services.php">Services</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="contact.php">Contact Us</a>
                         </li>
                     </ul>
         </nav>
@@ -338,29 +338,29 @@
 
     <div class="conatiner-fluid text-center" id="footer">
         <h1>MUNGARI KENYA LIMITED</h1>
-        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <div class="row">
             <div class="col-md-3">
-                <h5>About Us</h5>
-                <h5>Our Team</h5>
-                <h5>Contact Us</h5>
+                <h5><a href="#">About Us</a></h5>
+                <h5><a href="#">Our Team</a></h5>
+                <h5><a href="#">Contact Us</a></h5>
             </div>
             <div class="col-md-3">
-                <h5>Search Engine Optimization</h5>
-                <h5>Advertising</h5>
-                <h5>Logo Design</h5>
+                <h5><a href="#">Search Engine Optimization</a></h5>
+                <h5><a href="#">Advertising</a></h5>
+                <h5><a href="#">Logo Design</a></h5>
             </div>
             <div class="col-md-3">
-                <h5>Web Designs</h5>
-                <h5>Email Marketing</h5>
-                <h5>Copyrighting</h5>
+                <h5><a href="#">Web Designs</a></h5>
+                <h5><a href="#">Email Marketing</a></h5>
+                <h5><a href="#">Copyrighting</a></h5>
             </div>
             <div class="col-md-3">
-                <h5>Content Marketing</h5>
-                <h5>P.R. Outreach</h5>
-                <h5>Social Media Marketing</h5>
+                <h5><a href="#">Content Marketing</a></h5>
+                <h5><a href="#">P.R. Outreach</a></h5>
+                <h5><a href="#">Social Media Marketing</a></h5>
             </div>
         </div>
         <div class="row" id="copyright">

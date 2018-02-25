@@ -1,0 +1,126 @@
+/* ----------navbar + slider ---------------*/
+#top{
+    background-image: url("../images/meeting_banner_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*----------------------- navbar------------------ */
+.navbar-custom{
+    background-color: rgba(0, 193, 252, 0.377);
+    border-radius: 0;
+}
+
+.nav li a:focus,.nav li a:hover, .nav li a:active{
+    background-color: rgba(0, 193, 252, 0.377);
+    font-size: 1.1em;
+    font-weight: 600;
+    
+}
+.nav li a, .navbar-brand{
+    color: white;
+}
+
+/*------------- slider------------- */
+.content{
+    padding: 3em;
+}
+
+
+.item div{
+    padding: 1em;
+    
+}
+
+.item{
+    display: none;
+}
+
+.item img{
+    width:20em;
+    height:20em;
+    border:solid 0.4em  rgb(48, 111, 131);
+    
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float: right;
+}
+
+.prev{
+    float: left;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 193, 252, 0.677);
+}
+
+.dot {
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(179, 237, 255);
+    border: solid 0.1em white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: rgba(0, 193, 252, 0.677);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.item .row{
+    padding: 5em;
+    color: rgb(196, 193, 193);
+    font-weight: 600;
+}
+
+.back-tint{
+    background-color: #02020281;
+    padding-bottom: 1em;
+}
+
+.btn-info{
+    background-color:rgb(1, 106, 138);
+}
+
+.hamburger{
+    border:solid 0.2em white;
+}

@@ -222,7 +222,160 @@
         </div>
         
     </div>
-    
+    <div class="container-fluid text-center" id="testimonials">
+        <h1 class="text-center">Testimonials</h1>
+        <!-- slider -->
+        <!-- left right buttons -->
+        <span onclick="plusTestimonial(-1)" class="glyphicon glyphicon-chevron-left prev-testimonial"></span>
+        <span onclick="plusTestimonial(1)" class="glyphicon glyphicon-chevron-right next-testimonial"></span>
+        <div class="content">
+        
+            <!-- customer 1 -->
+            <div class="item-testimonial">
+                <div class="row">
+                    <!-- <div class="col-md-4">
+                        <img src="images/social_media_marketing_banner_inset.jpg" class="img-circle" alt="">
+                    </div> -->
+                    <div class="col-md-12">
+                        <h2>Customer 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam sequi tempora illo? Odit, eos labore quasi numquam enim est natus voluptate iste possimus fugiat saepe eum impedit voluptas quaerat..</p>
+                        
+                    </div>
+                </div>
+        
+            </div>
+            <!-- customer 2 -->
+            <div class="item-testimonial">
+                <div class="row">
+                    <!-- <div class="col-md-4">
+                        <img src="images/logo_design_banner_inset.png" class="img-circle" alt="">
+                    </div> -->
+                    <div class="col-md-12">
+                        <h2>Customer 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia tenetur rem, perferendis tempora quis, itaque maxime, adipisci ex qui eaque veritatis dignissimos soluta? Commodi qui iure obcaecati accusamus voluptatem.</p>                       
+                    </div>
+                </div>
+        
+            </div>
+            <!-- customer 3-->
+            <div class="item-testimonial">
+                <div class="row">
+                    <!-- <div class="col-md-4">
+                        <img src="images/web_design_banner_inset.png" class="img-circle" alt="">
+                    </div> -->
+                    <div class="col-md-12">
+                        <h2>customer 3</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia blanditiis ut necessitatibus aperiam aut
+                            totam corrupti nisi dolorem expedita amet aliquid repellat ratione illo adipisci, saepe fugit exercitationem
+                            beatae iure.</p>
+                        
+                    </div>
+                </div>
+        
+            </div>
+            <!-- customer 4 -->
+            <div class="item-testimonial">
+                <div class="row">
+                    <!-- <div class="col-md-4">
+                        <img src="images/email_marketing_banner_inset.jpg" class="img-circle" alt="">
+                    </div> -->
+                    <div class="col-md-12">
+                        <h2>Customer 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam delectus molestiae perferendis facilis.
+                            Provident unde esse harum maxime dolorum nam eius aperiam officiis fugiat praesentium, illum ea deserunt?
+                            Dolores, ipsam</p>
+                       
+                    </div>
+                </div>
+        
+            </div>
+            <!-- customer 5-->
+            <div class="item-testimonial">
+                <div class="row">
+                    <!-- <div class="col-md-4">
+                        <img src="images/seo_banner_inset.png" class="img-circle" alt="">
+                    </div> -->
+                    <div class="col-md-12">
+                        <h2>Customer 5</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestiae blanditiis provident dignissimos
+                            non laboriosam sunt sit ratione architecto iusto. Quibusdam nam aspernatur praesentium aliquid repudiandae
+                            impedit, assumenda cupiditate iusto!</p>
+                       
+                    </div>
+                </div>
+        
+            </div>
+            
+        
+            
+           
+        
+        
+        </div>
+        <!-- dots at bottom of slider -->
+        <div class="indicators text-center">
+            <span class="dot-testimonial dot1" onclick="currentTestimonial(1)"><img src="images/social_media_marketing_banner_inset.jpg" class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot2" onclick="currentTestimonial(2)"><img src="images/logo_design_banner_inset.png" class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot3" onclick="currentTestimonial(3)"><img src="images/web_design_banner_inset.png" class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot4" onclick="currentTestimonial(4)"><img src="images/email_marketing_banner_inset.jpg" class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot5" onclick="currentTestimonial(5)"><img src="images/seo_banner_inset.png" class="img-circle" alt=""></span>
+            
+        
+        </div>
+
+    </div>
+
+    <div class="container text-center" id="subscribe">
+        <form action="index.php" class="form-inline" role="form" method="post">
+            <div class="form-group">
+                <label for="email">Subscribe to our newsletter and get to know of all the current trends and offers from us</label>
+                <br>
+                <input type="text" class="form-control" placeholder="enter email address">
+                <input type="submit" class="btn btn-info" value="SUBSCRIBE">
+            </div>
+        </form>
+    </div>
+
+    <div class="conatiner-fluid text-center" id="footer">
+        <h1>MUNGARI KENYA LIMITED</h1>
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>About Us</h5>
+                <h5>Our Team</h5>
+                <h5>Contact Us</h5>
+            </div>
+            <div class="col-md-3">
+                <h5>Search Engine Optimization</h5>
+                <h5>Advertising</h5>
+                <h5>Logo Design</h5>
+            </div>
+            <div class="col-md-3">
+                <h5>Web Designs</h5>
+                <h5>Email Marketing</h5>
+                <h5>Copyrighting</h5>
+            </div>
+            <div class="col-md-3">
+                <h5>Content Marketing</h5>
+                <h5>P.R. Outreach</h5>
+                <h5>Social Media Marketing</h5>
+            </div>
+        </div>
+        <div class="row" id="copyright">
+            <div class="col-md-12 text-center">
+                <?php
+                echo "&copy;".date("Y") ."Mungari Kenya Marketing"
+                ?>
+            </div>
+        </div>
+    </div>
+
+    <!-- _______________________________________ -->
+
+    <!--                 UI scripts               -->
+    <!-- __________________________________________ -->
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/main.js"></script>

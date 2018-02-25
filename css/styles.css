@@ -26,12 +26,12 @@
 }
 
 
-.item div{
+.item div, .item-testimonial{
     padding: 1em;
     
 }
 
-.item{
+.item, .item-testimonial{
     display: none;
 }
 
@@ -195,11 +195,18 @@
     
 }
 
+.portfolio-wrapper h1{
+    color: rgb(1, 94, 122);
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
 .portfolio-item{
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 134, 175, 0.603);
     opacity: 0;
     padding: 2em;
-    
+    color:white;
+    font-weight: 600;   
 }
 
 #company1 .portfolio-item{
@@ -214,4 +221,133 @@
 #company7 .portfolio-item, #company8 .portfolio-item{
     height: 23em;
 }
+
+#portfolio{
+    padding: 2em 0 2em 0;
+}
+/* --------------------Testimonials----------------- */
+#testimonials{
+    background-color: rgb(0, 100, 131);
+    padding: 2em;
+}
+
+#testimonials h1{
+    color:rgb(197, 246, 255);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+#testimonials h2{
+    color:white;
+    font-weight: 400;
+}
+.prev-testimonial, .next-testimonial{
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: 100;
+    font-size: 1em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    position: relative;
+    margin-top: 5em;
+}
+
+/* Position the "next button" to the right */
+.next-testimonial {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float: right;
+}
+
+.prev-testimonial{
+    float: left;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-testimonial:hover, .next-testimonial:hover {
+    background-color: rgba(0, 193, 252, 0.677);
+}
+
+.item-testimonial img{
+    width:15em;
+    height:15em;
+    border:solid 0.4em  rgb(48, 111, 131);
+    
+}
+
+.item-testimonial{
+    padding: 1em 15em 1em 15em;
+    color: rgb(199, 195, 195);
+    margin: 0;
+}
+.dot-testimonial {
+    cursor:pointer;
+    margin: 0 2px;
+    background-color: rgb(179, 237, 255);
+    border: solid 0.1em white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+   
+}
+
+
+.dot-testimonial img{
+    height: 2em;
+    width:2em;
+}
+.dot-testimonial img:focus, .dot-testimonial img:active, .dot-testimonial img:hover{
+    height: 2.2em;
+    width:2.2em;
+}
+
+#testimonials .content{
+    margin-top: 0;
+    padding: 0;
+}
+
+/*------------ subscribe-------------------- */
+
+#subscribe{
+    padding: 3em;
+    
+}
+#subscribe .form-control{
+    width:55%;
+    
+}
+#subscribe .btn{
+    width:25%;
+}
+#footer{
+    padding: 3em;
+    background-color: teal;
+    color:rgb(217, 254, 255);
+}
+
+#footer h1{
+    color: rgb(197, 246, 255);
+    font-weight: 800;
+}
+
+#footer .fab{
+    font-size: 3em;
+    padding: 0.7em;
+    color: white;
+}
+
+#footer .fab:hover, #footer .fab:focus, #footer .fab:active{
+    font-size: 3em;
+    padding: 0.7em;
+    color: rgb(134, 230, 236);
+}
+
+#copyright{
+    width:100%;
+    background-color:rgb(0, 94, 94);
+    padding: 1em;
+    margin-top:2em;
+}
+
 

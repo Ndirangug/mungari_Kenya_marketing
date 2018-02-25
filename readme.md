@@ -6,3 +6,6 @@ couch password:
     animation-name: fade-portfolio;
     animation-duration: 3s;
 }
+
+background-color: rgb(0, 111, 145); 
+font color:rgb(197, 246, 255);

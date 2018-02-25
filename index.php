@@ -43,6 +43,7 @@
                             <a href="contact.php">Contact Us</a>
                         </li>
                     </ul>
+                </div>
         </nav>
         <!-- slider -->
             <!-- left right buttons -->

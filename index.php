@@ -344,24 +344,24 @@
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <div class="row">
             <div class="col-md-3">
-                <h5><a href="#">About Us</a></h5>
-                <h5><a href="#">Our Team</a></h5>
-                <h5><a href="#">Contact Us</a></h5>
+                <h5><a href="about.php">About Us</a></h5>
+                <h5><a href="about.php">Our Team</a></h5>
+                <h5><a href="contact.php">Contact Us</a></h5>
             </div>
             <div class="col-md-3">
-                <h5><a href="#">Search Engine Optimization</a></h5>
-                <h5><a href="#">Advertising</a></h5>
-                <h5><a href="#">Logo Design</a></h5>
+                <h5><a href="services.php">Search Engine Optimization</a></h5>
+                <h5><a href="services.php">Advertising</a></h5>
+                <h5><a href="services.php">Logo Design</a></h5>
             </div>
             <div class="col-md-3">
-                <h5><a href="#">Web Designs</a></h5>
-                <h5><a href="#">Email Marketing</a></h5>
-                <h5><a href="#">Copyrighting</a></h5>
+                <h5><a href="services.php">Web Designs</a></h5>
+                <h5><a href="services.php">Email Marketing</a></h5>
+                <h5><a href="services.php">Copyrighting</a></h5>
             </div>
             <div class="col-md-3">
-                <h5><a href="#">Content Marketing</a></h5>
-                <h5><a href="#">P.R. Outreach</a></h5>
-                <h5><a href="#">Social Media Marketing</a></h5>
+                <h5><a href="services.php">Content Marketing</a></h5>
+                <h5><a href="services.php">P.R. Outreach</a></h5>
+                <h5><a href="services.php">Social Media Marketing</a></h5>
             </div>
         </div>
         <div class="row" id="copyright">

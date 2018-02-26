@@ -8,4 +8,4 @@ couch password:
 }
 
 background-color: rgb(0, 111, 145); 
-font color:rgb(197, 246, 255);
+color:rgb(197, 246, 255);

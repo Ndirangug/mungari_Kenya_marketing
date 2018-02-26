@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,13 +50,16 @@
     <div class="container-fluid" id="overview">
         <div class="jumbotron">
             <div class="back-tint-about text-center">
+                <cms:editable name='overview' type='richtext'>
                 <h1>Overview</h1>
                 <p>We are a marketing and communication consultancy providing marketing startegy, web design, search engine optimization(SEO), social media and copyrighting service to startups, SMEs and other sole traders working in many sectors.We are professional, approachable and specialize in working in partnerships with clients to understand the key elements of their business and help them grow. We provide advice about potential tactics for long-term growth and short-term campaigns.We help reach a wider audience for your project and service through integrated methods. For short term businesses, we can offer consultancy and business meetings outside of normal office hours to avoid time loss.</p>
+                </cms:editable>
             </div>
         </div>
     </div>
 
     <div class="container text-center" id="team">
+        <cms:editable name='the_team' type='richtext'>
         <h1>The Team</h1>
         <p>Below is the team of creative minds governing the company</p>
         <div class="person">
@@ -85,8 +89,10 @@
                 <p> consectetur adipisicing elit. Placeat ratione et minima possimus, non provident molestiae suscipit corporis. Libero aliquid dolorum sed perferendis necessitatibus aspernatur assumenda quo veniam. Omnis, dolor. </p>
             </div>
         </div>
+        </cms:editable>
     </div>
     <div class="container-fluid" id="why_work_with_us">
+        <cms:editable name='why_us' type='richtext'>
         <h1>Why Work With Us</h1>
         <div class="row row1">
             <div class="col-md-3">
@@ -136,7 +142,7 @@
             </div>
         </div>
         
-        
+            </cms:editable>   
          
         
         
@@ -161,3 +167,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

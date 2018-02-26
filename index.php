@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +51,7 @@
             <span onclick="plusSlides(-1)" class="glyphicon glyphicon-chevron-left prev"></span>
             <span onclick="plusSlides(1)" class="glyphicon glyphicon-chevron-right next"></span>
         <div class="content">
-            
+            <cms:editable name='slider' type='richtext'>
             <!-- social media marketing -->
             <div class="item">
                 <div class="row">
@@ -136,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            
+</cms:editable>  
             
         </div>
         <!-- dots at bottom of slider -->
@@ -161,61 +162,79 @@
             <div class="table-responsive">
                 <table class="table">
                     <tr>
+                        
                         <td  colspan="2" rowspan="2" id="company1">
                             <div class="portfolio-item">
+                                <cms:editable name='grivit8' type='richtext'>
                                 <h1>Gravit 8 Marketing</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                                </cms:editable>
                             </div>
                         </td>
                         <td colspan="2" id="company2">
                             <div class="portfolio-item">
+                                <cms:editable name='bluefountain' type='richtext'>
                                 <h1>Blue Fountain Media</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                                </cms:editable>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td id="company3">
                             <div class="portfolio-item">
+                                <cms:editable name='enate' type='richtext'>
                                 <h1>Enate Marketing</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </cms:editable>
                             </div>
                         </td>
                         <td rowspan="3" id="company4">
                             <div class="portfolio-item">
+                                <cms:editable name='kvantum' type='richtext'>
                                 <h1>Kvantum</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                        </cms:editable>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="2" id="company5">
                             <div class="portfolio-item">
+                                <cms:editable name='wixon' type='richtext'>
                                 <h1>Wixon Jewellers</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                                </cms:editable>
                             </div>
                         </td>
                         <td colspan="2" id="company6">
                             <div class="portfolio-item">
+                                <cms:editable name='i7marketing' type='richtext'>
                                 <h1>i7 Marketing</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate
                                     corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
-                            </div>
+                            </cms:editable>
+                                </div>
                         </td>
                     </tr>
                     <tr>
                         <td id="company7">
                             <div class="portfolio-item">
+                                <cms:editable name='ripplemarketing' type='richtext'>
                                 <h1>Ripple Marketing</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                        </cms:editable>
                             </div>
                         </td>
                         <td id="company8">
                             <div class="portfolio-item">
+                                <cms:editable name='snemark' type='richtext'>
                                 <h1>Smemark</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem error consectetur praesentium. Recusandae earum cupiditate corrupti ut porro libero. Cum ullam autem repellendus fugit dicta atque ut. Nihil, amet.</p>
+                            </cms:editable>
                             </div>
                         </td>
+
                     </tr>
                 </table>
             </div>
@@ -230,7 +249,9 @@
         <span onclick="plusTestimonial(-1)" class="glyphicon glyphicon-chevron-left prev-testimonial"></span>
         <span onclick="plusTestimonial(1)" class="glyphicon glyphicon-chevron-right next-testimonial"></span>
         <div class="content">
-        
+
+
+        <cms:editable name='testimonials' type='richtext'>
             <!-- customer 1 -->
             <div class="item-testimonial">
                 <div class="row">
@@ -306,7 +327,7 @@
                 </div>
         
             </div>
-            
+            </cms:editable>
         
             
            
@@ -315,11 +336,11 @@
         </div>
         <!-- dots at bottom of slider -->
         <div class="indicators text-center">
-            <span class="dot-testimonial dot1" onclick="currentTestimonial(1)"><img src="images/social_media_marketing_banner_inset.jpg" class="img-circle" alt=""></span>
-            <span class="dot-testimonial dot2" onclick="currentTestimonial(2)"><img src="images/logo_design_banner_inset.png" class="img-circle" alt=""></span>
-            <span class="dot-testimonial dot3" onclick="currentTestimonial(3)"><img src="images/web_design_banner_inset.png" class="img-circle" alt=""></span>
-            <span class="dot-testimonial dot4" onclick="currentTestimonial(4)"><img src="images/email_marketing_banner_inset.jpg" class="img-circle" alt=""></span>
-            <span class="dot-testimonial dot5" onclick="currentTestimonial(5)"><img src="images/seo_banner_inset.png" class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot1" onclick="currentTestimonial(1)"><img src=<cms:editable name='customer1' type='image'>"images/social_media_marketing_banner_inset.jpg"</cms:editable> class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot2" onclick="currentTestimonial(2)"><img src=<cms:editable name='customer2' type='image'>"images/logo_design_banner_inset.png"</cms:editable> class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot3" onclick="currentTestimonial(3)"><img src=<cms:editable name='customer3' type='image'>"images/web_design_banner_inset.png"</cms:editable> class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot4" onclick="currentTestimonial(4)"><img src=<cms:editable name='customer4' type='image'>"images/email_marketing_banner_inset.jpg"</cms:editable> class="img-circle" alt=""></span>
+            <span class="dot-testimonial dot5" onclick="currentTestimonial(5)"><img src=<cms:editable name='customer5' type='image'>"images/seo_banner_inset.png"</cms:editable> class="img-circle" alt=""></span>
             
         
         </div>
@@ -339,9 +360,10 @@
 
     <div class="conatiner-fluid text-center" id="footer">
         <h1>MUNGARI KENYA LIMITED</h1>
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="<cms:editable name='facebooklink' type='richtext'>https://facebook.com </cms:editable>" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="<cms:editable name='instagramlink' type='richtext'>https://instagram.com </cms:editable>"  target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="<cms:editable name='twitterlink' type='richtext'>https://twitter.com</cms:editable>" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="<cms:editable name='googlepluslink' type='richtext'>https://twitter.com</cms:editable>" target="_blank"><i class="fab fa-google-plus"></i></a>
         <div class="row">
             <div class="col-md-3">
                 <h5><a href="about.php">About Us</a></h5>
@@ -406,3 +428,4 @@
     </script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

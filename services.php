@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,6 +63,7 @@
             </div>
             <div class="col-md-9">
                 <div class="tab-item" id="social_media" style="display:block;">
+                    <cms:editable name='services' type='richtext'>
                     <h1>Social Media Marketing</h1>
                     <blockquote class="text-center"><i>"The only thing worse than being talked about is not being talked about"</i></blockquote>
                     <h3 class="text-center">Facebook</h3>
@@ -135,6 +137,7 @@
                     <h1>Geo Fencing</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laudantium cumque aut expedita! Minus illum doloremque, sed ipsam omnis odio. Illum dolorem praesentium veniam. Cupiditate itaque aperiam eaque. Excepturi, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nulla quae? Similique explicabo adipisci dolores esse possimus? Obcaecati eveniet, quidem, dolorum illo ea ad laboriosam facere assumenda facilis doloremque eius.</p>
                 </div>
+            </cms:editable>
             </div>
         </div>
     </div>
@@ -231,3 +234,4 @@
     </script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

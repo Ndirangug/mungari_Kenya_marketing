@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,6 +50,7 @@
         <h1 class="text-center">We would like to hear from you</h1>
         <p class="text-center">Got any questions, feedback or suggestions? We would like to know what you have to say. Use the information on the left pane to contact one of employees directly or send us a message using the contact form on the right pane</p>
         <div class="row contact-content">
+             <cms:editable name='contact' type='richtext'>
             <div class="col-md-4 contact-items">
                 <h5>Support</h5>
                 <ol>
@@ -66,6 +68,7 @@
                     <li><i class="fa fa-envelope"></i> ir@mungari.co.ke</li>
                 </ol>
             </div>
+            </cms:editable>
             <div class="col-md-8 contact-form">
                 <form action="contact.php" method="post" role="form">
                     <div class="form-group">
@@ -107,3 +110,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

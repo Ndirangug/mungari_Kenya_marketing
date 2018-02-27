@@ -590,7 +590,3 @@ blockquote{
     color:green;
 }
 
-.navbar-brand:hover, .navbar-brand:focus, .navbar-header a span:focus, .navbar-header a span:hover,{
-    color:white;
-    background: black;
-}

@@ -415,6 +415,7 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/main.js"></script>
     <script>
+        
         //on hover portfoio item, show info
         $("document").ready(function(){
             $(".portfolio-item").mouseenter(function(){

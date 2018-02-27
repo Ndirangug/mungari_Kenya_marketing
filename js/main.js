@@ -12,6 +12,8 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("item");
@@ -41,6 +43,8 @@ function plusTestimonial(m) {
 function currentTestimonial(m) {
     showTestimonial(testimonialIndex = m);
 }
+
+
 
 function showTestimonial(m) {
     var j;

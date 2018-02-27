@@ -25,7 +25,7 @@
                         <span class="icon-bar hamburger"></span>
                         <span class="icon-bar hamburger"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Mungari Kenya Marketing</a>
+                    <a class="navbar-brand" href="index.php">Mungari Kenya Marketing</a>
                 </div>
                 <div class="collapse navbar-collapse" id="homeNavbar">
                     <ul class="nav navbar-nav">

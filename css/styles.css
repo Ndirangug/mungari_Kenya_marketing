@@ -8,6 +8,7 @@
 .navbar-custom{
     background-color: rgba(0, 193, 252, 0.377);
     border-radius: 0;
+    padding: 0.5em;
 }
 
 .nav li a:focus,.nav li a:hover, .nav li a:active{
@@ -113,11 +114,11 @@
 }
 
 .back-tint{
-    background-color: #020202b9;
+    background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: 1em;
 }
 .back-tint-about, .back-tint-services{
-    background-color: #020202b9;
+    background-color:rgba(0, 0, 0, 0.5);
     padding:0;
 }
 
@@ -342,6 +343,7 @@
     color: rgb(197, 246, 255);
     font-weight: 800;
 }
+
 
 #footer .fab{
     font-size: 3em;
@@ -578,4 +580,17 @@ blockquote{
 .contact-form .btn{
     margin-top: 1em;
     width:15%;
+}
+.error{
+    font-size: 0.9em;
+    color: red;
+}
+
+.success{
+    color:green;
+}
+
+.navbar-brand:hover, .navbar-brand:focus, .navbar-header a span:focus, .navbar-header a span:hover,{
+    color:white;
+    background: black;
 }

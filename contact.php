@@ -24,7 +24,7 @@
                         <span class="icon-bar hamburger"></span>
                         <span class="icon-bar hamburger"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Mungari Kenya Marketing</a>
+                    <a class="navbar-brand" href="index.php">Mungari Kenya Marketing</a>
                 </div>
                 <div class="collapse navbar-collapse" id="homeNavbar">
                     <ul class="nav navbar-nav">
@@ -70,26 +70,45 @@
             </div>
             </cms:editable>
             <div class="col-md-8 contact-form">
-                <form action="contact.php" method="post" role="form">
+                <cms:form action="contact.php" method="post" role="form">
                     <div class="form-group">
                         <label for="full_name">Full Name:</label>
-                        <input class="form-control" type="text" name="full_name" id="full_name" required placeholder="Enter full name">
+                        <cms:input class="form-control" type="text" name="full_name" id="full_name" required='1' placeholder="Enter full name"/>
+                        <cms:if k_error_full_name>
+                        <p id="full_name_error" class="error">Name is required</p>
+                        </cms:if>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input class="form-control" type="email" name="email" id="email" required placeholder="someone@email">
+                        <cms:input class="form-control" type="text" name="email" id="email" required='1' validator="email" placeholder="someone@email"/>
+                        <cms:if k_error_email>
+                        <p id="email_error" class="error">Enter Email in correct format</p>
+                        </cms:if>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input class="form-control" type="text" name="subject" id="subject" required placeholder="Enter subject">
+                        <cms:input class="form-control" type="text" name="subject" id="subject" required='1' placeholder="Enter subject"/>
+                        <cms:if k_error_subject>
+                        <p id="subject_error" class="error">Subject is required</p>
+                        </cms:if>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="comments, enquiry, feedback here........"
-                            required></textarea>
+                        <cms:input type="textarea" class="form-control" name="message" id="message" cols="30" rows="10" placeholder="comments, enquiry, feedback here........"
+                            required='1'></cms:input>
+                            <cms:if k_error_messagel>
+                            <p id="message_error" class="error">message body can't be empty</p>
+                            </cms:if>
                     </div>
                     
                     <input  value="SEND" type="submit" name="submit" class="btn btn-info class="form-control"">
-                </form>
+                    <cms:if k_success>
+                        <p id="message_success" class="success">Success! We will contact you on your email</p>
+                        <cms:send_mail from=k_email_from to=k_email_to subject="Contact Form From your website">
+                        The following is the email
+                        <cms:show k_success/>
+                    </cms:send_mail> 
+                     </cms:if>
+                </cms:form>
             </div>
         </div>
     </div>
@@ -99,8 +118,7 @@
         <h5><span><a href="index.php">Home</a></span> | <span><a href="about.php">About Us</a></span> | <span><a href="services.php">Services</a></span> | <span><a href="about.php">The Team</a></span> | <span><a href="contact.php">Contact Us</a></span> </h5>
     </div>
     
-    
-
+   
       <!-- _______________________________________ -->
 
     <!--                 UI scripts               -->

@@ -20,17 +20,17 @@
     <div class="container-fluid" id="top">
         <div class="back-tint">
         <!-- navbar from w3 schools -->
-        <nav class="navbar navbar-custom">
+        <nav style="padding:0 0em 2em 2em;" class="navbar navbar-custom">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#homeNavbar">
                         <span class="icon-bar hamburger"></span>
                         <span class="icon-bar hamburger"></span>
                         <span class="icon-bar hamburger"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Mungari Kenya Marketing</a>
+                    <a class="navbar-brand" href="index.php"><img style="display:inline;" class="logo" src="images/logo_nav.png" height="70" width="70" alt=""><span style="display:inline; margin-left:1em; font-size:1.3em;" >Mungari Marketing Kenya</span></a>
                 </div>
-                <div class="collapse navbar-collapse" id="homeNavbar">
-                    <ul class="nav navbar-nav">
+                <div class="collapse navbar-collapse" style="margin-right:4em;" id="homeNavbar">
+                    <ul style="margin-top:1em; margin-bottom:0;" class="nav navbar-nav navbar-right">
                         <li>
                             <a href="index.php">Home</a>
                         </li>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
             </div>
-</cms:editable>  
+                </cms:editable>  
             
         </div>
         <!-- dots at bottom of slider -->
@@ -348,14 +348,24 @@
     </div>
 
     <div class="container text-center" id="subscribe">
-        <form action="index.php" class="form-inline" role="form" method="post">
+        <cms:form action="index.php" class="form-inline" role="form" method="post">
             <div class="form-group">
                 <label for="email">Subscribe to our newsletter and get to know of all the current trends and offers from us</label>
                 <br>
-                <input type="text" class="form-control" placeholder="enter email address">
-                <input type="submit" class="btn btn-info" value="SUBSCRIBE">
+                <cms:input type="text" required='1' validator="email" name="email" class="form-control" placeholder="enter email address"/>
+                <cms:if k_error_email>
+                <p  id="email_error" class="error">Enter email in correct format</p>
+                </cms:if>
+                <cms:input type="submit" name="submit" class="btn btn-info" value="SUBSCRIBE"/>
+                <cms:if k_success>
+                    <p id="mail_success" class="success">Success! We will contact you on your email</p>
+                    <cms:send_mail from=k_email_from to=k_email_to subject="New email subscription">
+                    The following is the email
+                        <cms:show k_success/>
+                    </cms:send_mail> 
+                </cms:if>
             </div>
-        </form>
+        </cms:form>
     </div>
 
     <div class="conatiner-fluid text-center" id="footer">
@@ -394,6 +404,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <!-- _______________________________________ -->
 

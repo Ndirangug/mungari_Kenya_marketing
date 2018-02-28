@@ -58,7 +58,7 @@
                     <div class="col-md-4"><img src="images/social_media_marketing_banner_inset.jpg" class="img-circle" alt=""></div>
                     <div class="col-md-8"> <h1>Social Media Marketing</h1>
                     <p>We create social media accounts for you and manage them on your behalf.We make sure your pages and profiles on social media are up to standard and visible. We take care of making you visible so that you only think about production in your business.</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                 </div>
                
             </div>
@@ -68,7 +68,7 @@
                     <div class="col-md-4"><img src="images/logo_design_banner_inset.png" class="img-circle" alt=""></div>
                     <div class="col-md-8"> <h1>Logo Design</h1>
                     <p>We design logos for your business, institution, organization or any other entity according to your preferences. Our logo designs are professsionaly done and made to look good on any surface, material or background</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                 </div>
                 
             </div>
@@ -78,7 +78,7 @@
                     <div class="col-md-4"><img src="images/web_design_banner_inset.png" class="img-circle" alt=""></div>
                     <div class="col-md-8"><h1>Web Design</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia blanditiis ut necessitatibus aperiam aut totam corrupti nisi dolorem expedita amet aliquid repellat ratione illo adipisci, saepe fugit exercitationem beatae iure.</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                 </div>
                 
             </div>
@@ -89,7 +89,7 @@
                     <div class="col-md-8">
                         <h1>Email Marketing</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam delectus molestiae perferendis facilis. Provident unde esse harum maxime dolorum nam eius aperiam officiis fugiat praesentium, illum ea deserunt? Dolores, ipsam</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
                 
@@ -100,7 +100,7 @@
                     <div class="col-md-4"><img src="images/seo_banner_inset.png" class="img-circle" alt=""></div>
                     <div class="col-md-8"><h1>Search Engine Optimization</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestiae blanditiis provident dignissimos non laboriosam sunt sit ratione architecto iusto. Quibusdam nam aspernatur praesentium aliquid repudiandae impedit, assumenda cupiditate iusto!</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                 </div>
                 
             </div>
@@ -110,7 +110,7 @@
                     <div class="col-md-4"><img src="images/copyright_banner_inset.jpg" class="img-circle" alt=""></div>
                     <div class="col-md-8"><h1>Copyrighting</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta, nulla aut fugiat numquam debitis iusto sint aliquid harum ad tenetur, dolorem mollitia repudiandae, asperiores hic animi repellat exercitationem earum?</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                 </div>
                 
             </div>
@@ -122,7 +122,7 @@
                     <div class="col-md-8">
                         <h1>Content Marketing</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque qui, ipsam reprehenderit aperiam tenetur distinctio amet aliquid illum, excepturi totam nihil fuga consectetur magnam! Inventore quis voluptas quia velit!</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                     <div class="col-md-8">
                          <h1>P.R. Outreach</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur aperiam rem ratione soluta odio maiores voluptas harum voluptatibus corrupti architecto repudiandae perspiciatis nam dolores necessitatibus, saepe, accusantium maxime, blanditiis sequi.</p>
-                    <a href="#" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a href="services.php" class="btn btn-info">SEE MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
             </div>

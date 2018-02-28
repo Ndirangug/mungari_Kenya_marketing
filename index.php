@@ -359,11 +359,22 @@
                 <cms:input type="submit" name="submit" class="btn btn-info" value="SUBSCRIBE"/>
                 <cms:if k_success>
                     <p id="mail_success" class="success">Success! We will contact you on your email</p>
-                    <cms:send_mail from=k_email_from to=k_email_to subject="New email subscription">
-                    The following is the email
+                    
                         <cms:show k_success/>
-                    </cms:send_mail> 
+                    
                 </cms:if>
+                <?php
+
+                    if (isset($_POST['submit'])) {
+                        if (mail("ndirangu.mepawa@outlook.com", "NEW SUBSCRIPTION ON MUNGARI WEBSITE", "Hello, a new email ".$_POST['email']." asked to be added to the subsciption list ")) {
+                            echo "<p style='color:green;'>Success!Your request has been received. Check email shortly</p>";
+                        }
+
+                        else{
+                            echo "<p style='color:red;'>Sorry, your request could not be processed at this time</p>";   
+                        }
+                    }
+                ?>
             </div>
         </cms:form>
     </div>

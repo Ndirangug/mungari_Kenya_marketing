@@ -103,11 +103,21 @@
                     <input  value="SEND" type="submit" name="submit" class="btn btn-info class="form-control"">
                     <cms:if k_success>
                         <p id="message_success" class="success">Success! We will contact you on your email</p>
-                        <cms:send_mail from=k_email_from to=k_email_to subject="Contact Form From your website">
-                        The following is the email
+                        
                         <cms:show k_success/>
-                    </cms:send_mail> 
+                    
                      </cms:if>
+                     <?php
+                     if (isset($_POST['submit'])) {
+                        if (mail("ndirangu.mepawa@outlook.com", $_POST['subject'], "<p>Name: ".$_POST['full_name']." <br> Email: ".$_POST['email']." <br> ".$_POST['message']."</p>")) {
+                            echo "<p style='color:green;'>Success!Your message has been received. Check email shortly</p>";
+                        }
+
+                        else{
+                            echo "<p style='color:red;'>Sorry, your message could not be sent at this time.Try sending an email directly to one of the contacts on the left pane</p>";   
+                        }
+                    }
+                    ?>
                 </cms:form>
             </div>
         </div>

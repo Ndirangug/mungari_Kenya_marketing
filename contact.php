@@ -70,46 +70,33 @@
             </div>
             </cms:editable>
             <div class="col-md-8 contact-form">
-                <cms:form action="contact.php" method="post" role="form">
+                <form action="contact.php" method="post" role="form">
                     <div class="form-group">
                         <label for="full_name">Full Name:</label>
-                        <cms:input class="form-control" type="text" name="full_name" id="full_name" required='1' placeholder="Enter full name"/>
-                        <cms:if k_error_full_name>
-                        <p id="full_name_error" class="error">Name is required</p>
-                        </cms:if>
+                        <input class="form-control" type="text" name="full_name" id="full_name" placeholder="Enter full name"/>
+                        
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <cms:input class="form-control" type="text" name="email" id="email" required='1' validator="email" placeholder="someone@email"/>
-                        <cms:if k_error_email>
-                        <p id="email_error" class="error">Enter Email in correct format</p>
-                        </cms:if>
+                        <input class="form-control" type="email" name="email" id="email" required validator="email" placeholder="someone@email"/>
+                        
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <cms:input class="form-control" type="text" name="subject" id="subject" required='1' placeholder="Enter subject"/>
-                        <cms:if k_error_subject>
-                        <p id="subject_error" class="error">Subject is required</p>
-                        </cms:if>
+                        <input class="form-control" type="text" name="subject" id="subject" required placeholder="Enter subject"/>
+                        
                     </div>
                     <div class="form-group">
-                        <cms:input type="textarea" class="form-control" name="message" id="message" cols="30" rows="10" placeholder="comments, enquiry, feedback here........"
-                            required='1'></cms:input>
-                            <cms:if k_error_messagel>
-                            <p id="message_error" class="error">message body can't be empty</p>
-                            </cms:if>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="comments, enquiry, feedback here........"
+                            required></textarea>
+                            
                     </div>
                     
                     <input  value="SEND" type="submit" name="submit" class="btn btn-info class="form-control"">
-                    <cms:if k_success>
-                        <p id="message_success" class="success">Success! We will contact you on your email</p>
-                        
-                        <cms:show k_success/>
                     
-                     </cms:if>
                      <?php
                      if (isset($_POST['submit'])) {
-                        if (mail("ndirangu.mepawa@outlook.com", $_POST['subject'], "<p>Name: ".$_POST['full_name']." <br> Email: ".$_POST['email']." <br> ".$_POST['message']."</p>")) {
+                        if (mail("ndirangu.mepawa@outlook.com", $_POST['subject'], "Name: ".$_POST['full_name']." \n Email: ".$_POST['email']." \n ".$_POST['message'].".")) {
                             echo "<p style='color:green;'>Success!Your message has been received. Check email shortly</p>";
                         }
 
@@ -118,7 +105,7 @@
                         }
                     }
                     ?>
-                </cms:form>
+                </form>
             </div>
         </div>
     </div>

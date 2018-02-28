@@ -348,21 +348,14 @@
     </div>
 
     <div class="container text-center" id="subscribe">
-        <cms:form action="index.php" class="form-inline" role="form" method="post">
+        <form action="index.php" class="form-inline" role="form" method="post">
             <div class="form-group">
                 <label for="email">Subscribe to our newsletter and get to know of all the current trends and offers from us</label>
                 <br>
-                <cms:input type="text" required='1' validator="email" name="email" class="form-control" placeholder="enter email address"/>
-                <cms:if k_error_email>
-                <p  id="email_error" class="error">Enter email in correct format</p>
-                </cms:if>
-                <cms:input type="submit" name="submit" class="btn btn-info" value="SUBSCRIBE"/>
-                <cms:if k_success>
-                    <p id="mail_success" class="success">Success! We will contact you on your email</p>
-                    
-                        <cms:show k_success/>
-                    
-                </cms:if>
+                <input type="email" required  name="email" class="form-control" placeholder="enter email address"/>
+                
+                <input type="submit" name="submit" class="btn btn-info" value="SUBSCRIBE"/>
+               
                 <?php
 
                     if (isset($_POST['submit'])) {
@@ -376,7 +369,7 @@
                     }
                 ?>
             </div>
-        </cms:form>
+        </form>
     </div>
 
     <div class="conatiner-fluid text-center" id="footer">

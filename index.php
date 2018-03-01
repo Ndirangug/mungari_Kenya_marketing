@@ -419,9 +419,20 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/main.js"></script>
     <script>
-        
+
+        function nextSlide() {
+            plusSlides(1);
+        }
+      
         //on hover portfoio item, show info
         $("document").ready(function(){
+              
+           
+
+            //slide timer
+            setInterval(nextSlide, 3000);
+            
+            //portfolio fade
             $(".portfolio-item").mouseenter(function(){
                 $(this).fadeTo(1000, 1);
             });
@@ -439,8 +450,7 @@
                 $(this).fadeTo(2000, 0);
             });
            
-            
-
+          
         });
     </script>
 </body>
